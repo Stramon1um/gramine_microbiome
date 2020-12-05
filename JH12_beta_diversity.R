@@ -3,7 +3,7 @@
 # Ref to the ARTICLE
 # 
 #  Code to generate the Beta diversity figures used in Maver et al., manuscript
-#  Revision 08/20 
+#  Revision 12/20 
 #  mauro.maver@unibz.it
 #  d.bulgarelli@dundee.ac.uk  
 #
@@ -25,8 +25,6 @@ library("phyloseq")
 library("DESeq2")
 library("ggplot2")
 library("vegan")
-library ("ape")
-library("PMCMR")
 library("agricolae")
 
 #import the Phyloseq object 2 file
@@ -34,6 +32,7 @@ JH12_beta_div <- readRDS(file = "JH12_data_phyloseq_genus_rare.rds")
 JH12_beta_div
 
 design <- read.delim("Map_JH12_2.txt", sep = "\t", header=TRUE, row.names=1)
+design <- design[sample_names(JH12_beta_div), ]
 design
 
 
@@ -136,4 +135,4 @@ p + scale_colour_discrete(name = "Concentration", labels = c("G0", "G24", "G46")
 
 anova(JH12_CAP, permutations = how(nperm=5000))
 
-anova(JH12_CAP ~ Treatments * Description, permutations = how(nperm=5000))
+#anova(JH12_CAP ~ Treatments * Description, permutations = how(nperm=5000))

@@ -24,37 +24,7 @@ dev.off()
 library ("phyloseq")
 library("DESeq2")
 library ("UpSetR")
-library ("ape")
 library("ggplot2")
-
-#
-##
-### JH12 CAP Bray Curtis
-
-#import the Phyloseq object 
-JH12_beta_div <- readRDS(file = "JH12_data_phyloseq_genus_rare.rds")
-JH12_beta_div
-
-design <- read.delim("Map_JH12_2.txt", sep = "\t", header=TRUE, row.names=1)
-design
-
-JH12_CAP <- ordinate(JH12_beta_div, "CAP", "bray", ~ Treatments * Description)
-plot_ordination(JH12_beta_div, JH12_CAP, color = "Treatments")
-
-#assign shapes to Soil type and color to Sample type
-p=plot_ordination(JH12_beta_div, JH12_CAP, shape ="Description", color = "Treatments")
-p = p + geom_point(size = 5, alpha = 1)
-p + scale_colour_discrete(name = "Concentration", labels = c("G0", "G24", "G46"))+
-  scale_shape_discrete(name = "Sample type", labels = c("Barke", "Morex", "Bulk"))+
-  theme_bw()+
-  theme(axis.title.y = element_text(color="Black", size=16),
-        axis.title.x = element_text(color="Black", size=16),
-        legend.key.size = unit(2,"line"),
-        legend.text = element_text(size = 14),
-        axis.text.y = element_text(size = 12),
-        axis.text.x = element_text(size = 12),
-        legend.position="right",
-        legend.title = element_text(size = 16))
 
 
 #

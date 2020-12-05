@@ -3,7 +3,7 @@
 # Ref to the ARTICLE
 # 
 #  Code to generate the Alfa diversity figures used in Maver et al., manuscript
-#  Revision 08/20 
+#  Revision 12/20 
 #  mauro.maver@unibz.it
 #  d.bulgarelli@dundee.ac.uk  
 #
@@ -25,8 +25,6 @@ library("phyloseq")
 library("DESeq2")
 library("ggplot2")
 library("vegan")
-library ("ape")
-library("PMCMR")
 library("agricolae")
 library("grid")
 library("gridExtra")
