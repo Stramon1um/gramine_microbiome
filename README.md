@@ -8,6 +8,6 @@ Note that the manuscript is submitted and those scripts may be modified as a con
 
 The following files are also included in this repository:
 
-**MAP_JH12_2.txt** required for the objects constraction
+**MAP_JH12_2.txt** required for the objects construction
 
 **JH12_otu_table_SILVA132_97_nc2_noCMC** required for the generation of the .rds files and Figure 1 and Figure 2
