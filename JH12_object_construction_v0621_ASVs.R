@@ -69,6 +69,9 @@ JH12_phyloseq_DADA2_no_plants_2 = filter_taxa(JH12_phyloseq_DADA2_no_plants_1, f
 JH12_phyloseq_DADA2_no_plants_2 
 sort(sample_sums(JH12_phyloseq_DADA2_no_plants_2))
 
+# Upon completion of this additional filtering step, 
+# we retained 6 615 714 reads (min= 25 615; max = 305 408, mean = 147 015.9) 
+
 ##ratio filtered reads/total reads
 ratio <- sum(sample_sums(JH12_phyloseq_DADA2_no_plants_2))/sum(sample_sums(JH12_phyloseq_DADA2_no_plants))*100
 ratio
