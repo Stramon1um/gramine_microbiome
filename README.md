@@ -6,6 +6,8 @@ Please note: these files might change as a consequence of the revison process.
 
 - ```gramine_microbiome.Rproj``` -  Rproject file of this repository
 
+- ```dada2_asv_scripts``` -  folder containing files, scripts and html export of notebook to reproduce the ASVs picking strategy described in the manuscript
+
 - ```sessioninfo.text``` -  packages used for calculations
 
 - ```Map_JH12_2.txt``` - Mapping file of the experiment
