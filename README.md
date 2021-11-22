@@ -1,8 +1,8 @@
 # Gramine and Microbiome
 
-This repository contains scripts to reproduce analysis and figures presented in the manuscript Maver et al., describing the effects of an external addition of the alkaloid gramine on the rhizosphere microbiota recruitment in modern barley plants. The following list contain main scripts and files to reproduce figures and calculations presented in the submitted manuscript. 
+This repository contains scripts to reproduce analysis and figures presented in the manuscript [Maver et al. 2021](https://peerj.com/articles/12498/), describing the effects of an external addition of the alkaloid gramine on the rhizosphere microbiota recruitment in modern barley plants. 
 
-Please note: these files might change as a consequence of the revison process.
+List of files:
 
 - ```gramine_microbiome.Rproj``` -  Rproject file of this repository
 
